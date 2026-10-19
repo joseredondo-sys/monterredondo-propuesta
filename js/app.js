@@ -496,22 +496,22 @@
           <div>
             <p class="kicker reveal">Sobre esta maqueta</p>
             <h1 class="reveal">Así podría ser la web de <em>Monterredondo</em></h1>
-            <p class="lead reveal" style="margin-top:1.5rem">Hemos montado esta maqueta navegable con la información pública de vuestras fichas de Booking y Google. El diseño, la estructura, los tres idiomas y el flujo de reserva son reales. Las fotos de habitaciones y comida, los precios y parte de los textos son provisionales.</p>
+            <p class="lead reveal" style="margin-top:1.5rem">Hemos montado esta maqueta navegable con la información pública de vuestras fichas de Booking y Google. El diseño, la estructura, los tres idiomas y la solicitud de reserva son reales. Las fotos de habitaciones y comida, los precios y parte de los textos son provisionales.</p>
             <p class="reveal" style="margin-top:2rem"><a class="btn btn--sea" href="${L('')}" data-magnetic>Ver la web ${I.arrow}</a></p>
           </div>
           <ul class="legend">
-            <li class="reveal">${yellow}<span><b>«Foto no real · Recreación IA»</b>Imágenes creadas con IA a partir de vuestras fotos de Booking para enseñar el estilo. En la web definitiva irían fotos reales de una sesión profesional.</span></li>
+            <li class="reveal">${yellow}<span><b>«Foto no real · Recreación IA»</b>Imágenes creadas con IA a partir de vuestras fotos de Booking para enseñar el estilo. En la web definitiva irán vuestras fotos reales.</span></li>
             <li class="reveal">${dark}<span><b>«Foto real»</b>Fotos de vuestra ficha de Booking (con un ligero retoque de luz) y fotos con licencia libre de Meira y alrededores, con su autor citado.</span></li>
-            <li class="reveal">${grey}<span><b>Vídeo de portada</b>Montaje con clips libres de Pexels de paisajes del norte. No es Meira: en la web real se grabaría con dron la casa, la Serra y el Pedregal de Irimia.</span></li>
+            <li class="reveal">${grey}<span><b>Vídeo de portada</b>Montaje con clips libres de Pexels de paisajes del norte. No es Meira: en la web real irá un vídeo de la zona.</span></li>
             <li class="reveal">${grey}<span><b>Precios, menú, horarios y ventajas</b>Son ejemplos. Los decidís vosotros.</span></li>
-            <li class="reveal">${grey}<span><b>Reserva</b>Motor de demostración: no cobra ni envía datos. En la versión final, conectado a Booking para no duplicar reservas.</span></li>
+            <li class="reveal">${grey}<span><b>Reserva</b>Solicitud de reserva de demostración: no envía datos. En la web real os llega la solicitud por email, la confirmáis vosotros y el cliente paga en efectivo al llegar, como ahora.</span></li>
           </ul>
         </div>
 
         <div class="facts">
           <div class="fact reveal"><small>Hoy</small><h3>No tenéis web propia</h3><p>Google enlaza a un directorio de terceros. Quien os busca por el nombre acaba reservando en Booking, con comisión.</p></div>
           <div class="fact reveal"><small>Hoy</small><h3>Las fotos de Booking tienen años</h3><p>Y ninguna enseña el restaurante, que es lo que más elogian vuestros clientes.</p></div>
-          <div class="fact reveal"><small>Hoy</small><h3>En Booking, solo pago en efectivo</h3><p>Con la web se puede cobrar con tarjeta o pedir una señal, y así bajan las cancelaciones de última hora.</p></div>
+          <div class="fact reveal"><small>Hoy</small><h3>Reservar directo depende del teléfono</h3><p>La web recoge reservas a cualquier hora, sin tarjeta y con pago en efectivo al llegar, como trabajáis ahora.</p></div>
           <div class="fact reveal"><small>Oportunidad</small><h3>8,8 en limpieza y en trato</h3><p>Vuestros clientes ya lo dicen. La web lo pone en primer plano junto a la comida casera.</p></div>
           <div class="fact reveal"><small>Oportunidad</small><h3>Meira se vende sola</h3><p>Nacimiento del Miño, monasterio del siglo XII, rutas, Lugo a 33 km. Contenido que atrae visitas desde Google.</p></div>
           <div class="fact reveal"><small>Oportunidad</small><h3>Castellano, gallego e inglés</h3><p>Para el viajero de aquí y para el peregrino o motero que viene de fuera.</p></div>
@@ -520,7 +520,7 @@
         <div style="margin-top:var(--section)">
           <p class="kicker reveal">Antes y después</p>
           <h2 class="h2 reveal">Las mismas habitaciones, <em>mejor contadas</em></h2>
-          <p class="lead reveal" style="margin-top:1rem">Arrastra la barra. A la izquierda, la foto que hoy aparece en Booking. A la derecha, una recreación con IA de cómo podría verse con buena luz, ropa de cama nueva y una sesión de fotos.</p>
+          <p class="lead reveal" style="margin-top:1rem">Arrastra la barra. A la izquierda, la foto que hoy aparece en Booking. A la derecha, una recreación con IA de cómo podría verse con buena luz y ropa de cama nueva.</p>
           <div class="ba-grid">${pairs.map(ba).join('')}</div>
         </div>
 
@@ -564,7 +564,7 @@
       for (let dd = 1; dd <= daysIn; dd++) {
         const d = new Date(first.getFullYear(), first.getMonth(), dd);
         const past = d < TODAY;
-        const full = !past && TYPE_KEYS.every(t => availOn(t, d) === 0);
+        const full = false; // sin motor: la disponibilidad la confirma la casa
         const dis = past || full;
         const s = iso(d);
         let cls = 'day';
@@ -581,7 +581,7 @@
       <div class="panel">
         <div class="cal-head"><h2>${hint}</h2><div class="cal-nav"><button class="js-prev" aria-label="prev" ${BK.offset <= 0 ? 'disabled' : ''}>${I.arrow}</button><button class="js-next" aria-label="next" ${BK.offset >= 18 ? 'disabled' : ''}>${I.arrow}</button></div></div>
         <div class="cals">${months}</div>
-        <div class="cal-legend"><span><i></i>${b.closed}</span><span><b style="color:var(--sea);font-size:.7rem">36</b>${T.rooms.from} · ${T.types.individual.name} · ${T.rooms.example}</span></div>
+        <div class="cal-legend"><span><b style="color:var(--sea);font-size:.7rem">36</b>${T.rooms.from} · ${T.types.individual.name} · ${T.rooms.example}</span></div>
         <div class="guests-row"><b>${T.search.guests}</b><div class="stepper"><button class="js-ad" data-v="-1" aria-label="-">−</button><b>${BK.adults}</b><button class="js-ad" data-v="1" aria-label="+">+</button><span class="muted">${BK.adults === 1 ? T.search.adult : T.search.adults}</span></div></div>
       </div>`;
     $('.js-prev').onclick = () => { BK.offset--; bkCalendar(); };
@@ -605,14 +605,14 @@
       <div class="results">${TYPE_KEYS.map(k => {
         const q = quote(k, BK.in, BK.out), t = T.types[k];
         const capOk = BK.adults <= TYPES[k].max;
-        const sold = q.left === 0 || !capOk;
+        const sold = !capOk;
         return `<article class="result reveal ${BK.type === k ? 'is-selected' : ''} ${sold ? 'is-sold' : ''}">
           <div class="result__img"><img src="${TYPES[k].hero}" alt="${t.name}"></div>
           <div>
             <h3>${t.name}</h3>
             <p class="result__meta">${t.cap} · ${t.beds}</p>
             <p class="result__meta">${TYPES[k].feats.slice(0, 3).map(f => T.feat[f]).join(' · ')}</p>
-            ${sold ? `<span class="result__left">${capOk ? b.soldOut : t.cap}</span>` : (q.left <= 2 ? `<span class="result__left">${b.left.replace('{n}', q.left)}</span>` : '')}
+            ${sold ? `<span class="result__left">${t.cap}</span>` : ''}
           </div>
           <div class="result__price">
             <div><s>${money(q.other)}</s><b>${money(q.total)}</b><small>${n} ${n === 1 ? b.night1 : b.nights} · ${T.rooms.example}</small></div>
@@ -687,13 +687,14 @@
       ${q ? `<div class="sum-row"><span>${b.other}</span><s>${money(q.other)}</s></div>
              <div class="sum-total"><span>${b.total}</span><b>${money(q.total)}</b></div>
              <p class="tiny" style="color:var(--terra);font-weight:700">${b.save.replace('{x}', money(q.other - q.total))}</p>` : ''}
+      <p class="tiny" style="margin-top:.75rem;display:flex;gap:.4rem;align-items:flex-start"><span style="width:16px;flex:none;color:var(--sea)">${I.info}</span>${b.payNote}</p>
       ${cta ? `<button class="btn btn--sea js-next-step" data-magnetic>${cta} ${I.arrow}</button>` : ''}
       <p class="err js-serr" aria-live="polite"></p>
       <p class="tiny" style="margin-top:.5rem;display:flex;gap:.4rem;align-items:flex-start"><span style="width:16px;flex:none;color:var(--sea)">${I.shield}</span>${T.search.best}</p>`;
     const nx = $('.js-next-step');
     if (nx) nx.onclick = () => {
       if (BK.step === 1) { if (!BK.in || !BK.out) { $('.js-serr').textContent = b.needDates; return; } BK.step = 2; }
-      else if (BK.step === 2) { if (!BK.type) { BK.type = TYPE_KEYS.find(k => quote(k, BK.in, BK.out).left > 0 && BK.adults <= TYPES[k].max) || null; if (!BK.type) return; } BK.step = 3; }
+      else if (BK.step === 2) { if (!BK.type) { BK.type = TYPE_KEYS.find(k => BK.adults <= TYPES[k].max) || null; if (!BK.type) return; } BK.step = 3; }
       bkRender();
     };
   }

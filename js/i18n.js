@@ -83,26 +83,26 @@ window.I18N = {
     cta: { title: 'Te esperamos en <em>Meira</em>', btn: 'Reservar ahora' },
     detail: {
       back: 'Todas las habitaciones', cap: 'Capacidad', beds: 'Camas', size: 'Superficie', incl: 'Qué incluye', good: 'Bueno saber',
-      policies: ['Entrada de 12:00 a 23:00 · salida hasta las 12:00', 'No se admiten mascotas · no se puede fumar', 'Parking gratuito y garaje para motos', 'Silencio de 23:00 a 9:00'],
+      policies: ['Pago en el alojamiento, en efectivo · sin tarjeta para reservar', 'Entrada de 12:00 a 23:00 · salida hasta las 12:00', 'No se admiten mascotas · no se puede fumar', 'Parking gratuito y garaje para motos', 'Silencio de 23:00 a 9:00'],
       confirm: '* Capacidades, camas y superficies de ejemplo, a confirmar con la casa.',
       reserve: 'Reservar esta habitación', other: 'Otras habitaciones',
       aiNote: 'Las fotos marcadas como «no real» son recreaciones con IA. Las de «foto real» son de la ficha actual en Booking.'
     },
     realTag: 'Foto real', realTagBooking: 'Foto real · Booking',
     booking: {
-      noticeTitle: 'Motor de reservas de demostración',
-      notice: 'Así funcionaría la reserva en la web. En la versión final se conecta a un motor con channel manager (p. ej. Beds24) que sincroniza la disponibilidad con Booking. No se envía ningún dato ni se cobra nada.',
+      noticeTitle: 'Solicitud de reserva de demostración',
+      notice: 'Así funcionaría la reserva en la web: eliges fechas y habitación, envías la solicitud y la casa te confirma la disponibilidad por teléfono o email. Sin tarjeta: pagas en efectivo al llegar. En la maqueta no se envía ningún dato.',
       title: 'Reserva tu habitación',
-      steps: ['Fechas', 'Habitación', 'Tus datos', 'Confirmación'],
+      steps: ['Fechas', 'Habitación', 'Tus datos', 'Solicitud enviada'],
       selectIn: 'Elige el día de llegada', selectOut: 'Ahora, el día de salida',
-      available: 'Habitaciones disponibles', change: 'Cambiar fechas', choose: 'Elegir',
+      available: 'Habitaciones', change: 'Cambiar fechas', choose: 'Elegir',
       left: '¡Solo quedan {n}!', soldOut: 'Completa', night1: 'noche', nights: 'noches',
-      priceNote: 'Precios de ejemplo, IVA incluido. Los fija la casa en el panel del motor.',
+      priceNote: 'Precios orientativos de ejemplo, IVA incluido. La casa confirma el precio final.',
       summary: 'Tu reserva', dates: 'Fechas', other: 'En otras plataformas', total: 'Total', save: 'Ahorras {x} reservando aquí',
       next: 'Continuar', backBtn: 'Volver', needDates: 'Elige las fechas de llegada y salida.', needAll: 'Rellena los campos obligatorios y acepta las condiciones.',
-      form: { name: 'Nombre y apellidos', email: 'Email', phone: 'Teléfono', country: 'País', time: 'Hora de llegada', notes: 'Peticiones (garaje para moto, cena a la llegada…)', accept: 'Acepto las condiciones de reserva y la política de privacidad.', confirm: 'Confirmar reserva' },
-      done: '¡Reserva confirmada!', doneText: 'Te hemos enviado un email con todos los detalles. Te esperamos en Meira.',
-      locator: 'Localizador', newSearch: 'Nueva búsqueda', closed: 'Completo'
+      form: { name: 'Nombre y apellidos', email: 'Email', phone: 'Teléfono', country: 'País', time: 'Hora de llegada', notes: 'Peticiones (garaje para moto, cena a la llegada…)', accept: 'Acepto las condiciones de reserva y la política de privacidad.', confirm: 'Enviar solicitud' },
+      done: '¡Solicitud enviada!', doneText: 'Te confirmamos la disponibilidad por teléfono o email lo antes posible. El pago, en efectivo al llegar. Te esperamos en Meira.',
+      locator: 'Nº de solicitud', newSearch: 'Nueva búsqueda', closed: 'Completo', payNote: 'Sin tarjeta: pagas en efectivo al llegar.'
     },
     contact: {
       kicker: 'Contacto', title: 'Hablemos', sub: 'Llámanos, escríbenos por WhatsApp o déjanos un mensaje. Respondemos el mismo día.',
@@ -196,26 +196,26 @@ window.I18N = {
     cta: { title: 'Agardámoste en <em>Meira</em>', btn: 'Reservar agora' },
     detail: {
       back: 'Todas as habitacións', cap: 'Capacidade', beds: 'Camas', size: 'Superficie', incl: 'Que inclúe', good: 'Bo saber',
-      policies: ['Entrada de 12:00 a 23:00 · saída ata as 12:00', 'Non se admiten mascotas · non se pode fumar', 'Aparcadoiro gratuíto e garaxe para motos', 'Silencio de 23:00 a 9:00'],
+      policies: ['Pagamento no aloxamento, en efectivo · sen tarxeta para reservar', 'Entrada de 12:00 a 23:00 · saída ata as 12:00', 'Non se admiten mascotas · non se pode fumar', 'Aparcadoiro gratuíto e garaxe para motos', 'Silencio de 23:00 a 9:00'],
       confirm: '* Capacidades, camas e superficies de exemplo, por confirmar coa casa.',
       reserve: 'Reservar esta habitación', other: 'Outras habitacións',
       aiNote: 'As fotos marcadas como «non real» son recreacións con IA. As de «foto real» son da ficha actual en Booking.'
     },
     realTag: 'Foto real', realTagBooking: 'Foto real · Booking',
     booking: {
-      noticeTitle: 'Motor de reservas de demostración',
-      notice: 'Así funcionaría a reserva na web. Na versión final conéctase a un motor con channel manager (p. ex. Beds24) que sincroniza a dispoñibilidade con Booking. Non se envía ningún dato nin se cobra nada.',
+      noticeTitle: 'Solicitude de reserva de demostración',
+      notice: 'Así funcionaría a reserva na web: escolles datas e habitación, envías a solicitude e a casa confírmache a dispoñibilidade por teléfono ou email. Sen tarxeta: pagas en efectivo ao chegar. Na maqueta non se envía ningún dato.',
       title: 'Reserva a túa habitación',
-      steps: ['Datas', 'Habitación', 'Os teus datos', 'Confirmación'],
+      steps: ['Datas', 'Habitación', 'Os teus datos', 'Solicitude enviada'],
       selectIn: 'Escolle o día de chegada', selectOut: 'Agora, o día de saída',
-      available: 'Habitacións dispoñibles', change: 'Cambiar datas', choose: 'Escoller',
+      available: 'Habitacións', change: 'Cambiar datas', choose: 'Escoller',
       left: 'Só quedan {n}!', soldOut: 'Completa', night1: 'noite', nights: 'noites',
-      priceNote: 'Prezos de exemplo, IVE incluído. Fíxaos a casa no panel do motor.',
+      priceNote: 'Prezos orientativos de exemplo, IVE incluído. A casa confirma o prezo final.',
       summary: 'A túa reserva', dates: 'Datas', other: 'Noutras plataformas', total: 'Total', save: 'Aforras {x} reservando aquí',
       next: 'Continuar', backBtn: 'Volver', needDates: 'Escolle as datas de chegada e saída.', needAll: 'Enche os campos obrigatorios e acepta as condicións.',
-      form: { name: 'Nome e apelidos', email: 'Email', phone: 'Teléfono', country: 'País', time: 'Hora de chegada', notes: 'Peticións (garaxe para moto, cea á chegada…)', accept: 'Acepto as condicións de reserva e a política de privacidade.', confirm: 'Confirmar reserva' },
-      done: 'Reserva confirmada!', doneText: 'Enviámosche un email con todos os detalles. Agardámoste en Meira.',
-      locator: 'Localizador', newSearch: 'Nova busca', closed: 'Completo'
+      form: { name: 'Nome e apelidos', email: 'Email', phone: 'Teléfono', country: 'País', time: 'Hora de chegada', notes: 'Peticións (garaxe para moto, cea á chegada…)', accept: 'Acepto as condicións de reserva e a política de privacidade.', confirm: 'Enviar solicitude' },
+      done: 'Solicitude enviada!', doneText: 'Confirmámosche a dispoñibilidade por teléfono ou email canto antes. O pagamento, en efectivo ao chegar. Agardámoste en Meira.',
+      locator: 'Nº de solicitude', newSearch: 'Nova busca', closed: 'Completo', payNote: 'Sen tarxeta: pagas en efectivo ao chegar.'
     },
     contact: {
       kicker: 'Contacto', title: 'Falemos', sub: 'Chámanos, escríbenos por WhatsApp ou déixanos unha mensaxe. Respondemos no mesmo día.',
@@ -309,26 +309,26 @@ window.I18N = {
     cta: { title: 'See you in <em>Meira</em>', btn: 'Book now' },
     detail: {
       back: 'All rooms', cap: 'Capacity', beds: 'Beds', size: 'Size', incl: 'What’s included', good: 'Good to know',
-      policies: ['Check-in 12:00–23:00 · check-out by 12:00', 'No pets · no smoking', 'Free parking and motorbike garage', 'Quiet hours 23:00–9:00'],
+      policies: ['Pay in cash on arrival · no card needed to book', 'Check-in 12:00–23:00 · check-out by 12:00', 'No pets · no smoking', 'Free parking and motorbike garage', 'Quiet hours 23:00–9:00'],
       confirm: '* Sample capacities, beds and sizes, to be confirmed with the house.',
       reserve: 'Book this room', other: 'Other rooms',
       aiNote: 'Photos marked “not real” are AI recreations. Those marked “real photo” come from the current Booking listing.'
     },
     realTag: 'Real photo', realTagBooking: 'Real photo · Booking',
     booking: {
-      noticeTitle: 'Demo booking engine',
-      notice: 'This is how booking on the site would work. The final version connects to an engine with a channel manager (e.g. Beds24) that syncs availability with Booking. No data is sent and nothing is charged.',
+      noticeTitle: 'Demo booking request',
+      notice: 'This is how booking on the site would work: choose your dates and room, send the request and the house confirms availability by phone or email. No card needed: pay in cash on arrival. Nothing is sent from the mock-up.',
       title: 'Book your room',
-      steps: ['Dates', 'Room', 'Your details', 'Confirmation'],
+      steps: ['Dates', 'Room', 'Your details', 'Request sent'],
       selectIn: 'Choose your arrival date', selectOut: 'Now your departure date',
-      available: 'Available rooms', change: 'Change dates', choose: 'Select',
+      available: 'Rooms', change: 'Change dates', choose: 'Select',
       left: 'Only {n} left!', soldOut: 'Sold out', night1: 'night', nights: 'nights',
-      priceNote: 'Sample prices, VAT included. Set by the house in the engine’s dashboard.',
+      priceNote: 'Sample guide prices, VAT included. The house confirms the final price.',
       summary: 'Your booking', dates: 'Dates', other: 'On other platforms', total: 'Total', save: 'You save {x} by booking here',
       next: 'Continue', backBtn: 'Back', needDates: 'Choose your arrival and departure dates.', needAll: 'Fill in the required fields and accept the terms.',
-      form: { name: 'Full name', email: 'Email', phone: 'Phone', country: 'Country', time: 'Arrival time', notes: 'Requests (bike garage, dinner on arrival…)', accept: 'I accept the booking terms and the privacy policy.', confirm: 'Confirm booking' },
-      done: 'Booking confirmed!', doneText: 'We have emailed you all the details. See you in Meira.',
-      locator: 'Booking reference', newSearch: 'New search', closed: 'Full'
+      form: { name: 'Full name', email: 'Email', phone: 'Phone', country: 'Country', time: 'Arrival time', notes: 'Requests (bike garage, dinner on arrival…)', accept: 'I accept the booking terms and the privacy policy.', confirm: 'Send request' },
+      done: 'Request sent!', doneText: 'We will confirm availability by phone or email as soon as possible. Payment is in cash on arrival. See you in Meira.',
+      locator: 'Request number', newSearch: 'New search', closed: 'Full', payNote: 'No card needed: pay in cash on arrival.'
     },
     contact: {
       kicker: 'Contact', title: 'Get in touch', sub: 'Call us, message us on WhatsApp or leave us a note. We reply the same day.',
