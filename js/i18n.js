@@ -1,3 +1,4 @@
+/*! © 2026 Ad2Place Digital (Inversiones Azteca Mataró S.L.). Código propiedad de Ad2Place. Prohibida su copia o uso sin autorización escrita. */
 /* Pensión Monterredondo · textos de la maqueta (ES / GL / EN) */
 window.I18N = {
   es: {
